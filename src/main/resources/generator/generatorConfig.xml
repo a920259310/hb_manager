@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <classPathEntry
+        location="F:\mysql-connector-java-5.1.38.jar" />
+    <context id="context1">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+            connectionURL="jdbc:mysql://127.0.0.1:3306/cbb" userId="root"
+            password="root" />
+        <javaModelGenerator targetPackage="top.putop.mi.db.model"
+            targetProject="src/main/java" />
+        <sqlMapGenerator targetPackage="top.putop.mi.db.mapper"
+            targetProject="src/main/java" />
+        <javaClientGenerator targetPackage="top.putop.mi.db.dao"
+            targetProject="src/main/java" type="XMLMAPPER" />
+
+
+
+        <table schema="cbb" tableName="b_base_info"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false">
+        </table>
+
+        <!--<table schema="cbb" tableName="b_buy_price_detail"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false">
+        </table>-->
+
+<!--        <table schema="cbb" tableName="ods_bb_price_his"-->
+<!--               enableCountByExample="false"-->
+<!--               enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false">-->
+<!--        </table>-->
+
+        <!--<table schema="cbb" tableName="ods_tb_order"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false">
+        </table>-->
+
+
+    </context>
+</generatorConfiguration>
